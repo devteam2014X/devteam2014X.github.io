@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<Title> Content Is King! – Online Resources</Title>
+	<Title> With or Without You? – Online Resources</Title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
 	 crossorigin="anonymous">
@@ -229,11 +229,11 @@
 		<div class="row">
 			<div class="col-md-12">
 				<!--Short title -->
-				<h1>Content Is King!</h1>
+				<h1>With or Without You?</h1>
 
 
 				<p class="text-muted">
-					This online resource provides additional materials and statistical analyses for the paper "Content Is King! The Influence
+					This online resource provides additional materials and statistical analyses for the paper "With or Without You? The Influence
 					of Search Partners on Consumer Behavior in Paid Search"
 				</p>
 
@@ -244,6 +244,7 @@
 		<ul class="nav nav-tabs">
 			<li role="presentation" class="active"><a href="#abstract" role="tab" data-toggle="tab">Abstract</a></li>
 			<li role="presentation"><a href="#resources" role="tab" data-toggle="tab">Systematic Literature Review</a></li>
+			<li role="presentation"><a href="#analyses" role="tab" data-toggle="tab">Empirical Analyses</a></li>
 			<li role="presentation"><a href="#robustnessChecks" role="tab" data-toggle="tab">Robustness Checks</a></li>
 			<li role="presentation"><a href="#references" role="tab" data-toggle="tab">References</a></li>
 		</ul>
@@ -254,6 +255,121 @@
 
 
 			</div>
+
+
+			<div id="analyses" role="tabpanel" class="tab-pane fade">
+
+					<div class="row">
+							<div class="col-md-3">
+								<h3>
+									<!-- just for margins -->
+								</h3>
+								<ul class="nav nav-pills nav-stacked">
+									<li role="presentation"><a href="#variables" role="tab" data-toggle="tab">Variables</a></li>
+									<li role="presentation" class="active"><a href="#pre" role="tab" data-toggle="tab">OLS <br/> Pre-Treatment</a></li>
+									<li role="presentation"><a href="#post" role="tab" data-toggle="tab">OLS <br/> Post-Treatment</a></li>
+								</ul>
+							</div>
+		
+							<div class="col-md-9 tab-content">
+		
+
+
+								<div id="pre" role="tabpanel" class="tab-pane active fade in ">
+
+										
+					
+										<h4>Regression Results – Pre-Treatment</h4>
+										
+														
+										
+										<table class="table table-hover" style="text-align:center"><tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="4"><em>Dependent variable:</em></td></tr>
+											<tr><td></td><td colspan="4" style="border-bottom: 1px solid black"></td></tr>
+											<tr><td style="text-align:left"></td><td>CTR</td><td>NV</td><td>DUR</td><td>WV</td></tr>
+											<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td></tr>
+											<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Treatment</td><td>-0.00</td><td>-0.03</td><td>9.54</td><td>0.06</td></tr>
+											<tr><td style="text-align:left"></td><td>(0.01)</td><td>(0.05)</td><td>(8.61)</td><td>(0.19)</td></tr>
+											<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+											<tr><td style="text-align:left">POS</td><td>-0.01</td><td>-0.01</td><td>18.10<sup>***</sup></td><td>0.08</td></tr>
+											<tr><td style="text-align:left"></td><td>(0.00)</td><td>(0.04)</td><td>(6.24)</td><td>(0.14)</td></tr>
+											<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+											<tr><td style="text-align:left">KWSpecific</td><td>0.01</td><td>0.09</td><td>-13.55</td><td>-0.19</td></tr>
+											<tr><td style="text-align:left"></td><td>(0.06)</td><td>(0.24)</td><td>(42.51)</td><td>(0.94)</td></tr>
+											<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+											<tr><td style="text-align:left">Constant</td><td>0.04</td><td>0.79<sup>***</sup></td><td>-7.24</td><td>1.63</td></tr>
+											<tr><td style="text-align:left"></td><td>(0.06)</td><td>(0.28)</td><td>(48.76)</td><td>(1.08)</td></tr>
+											<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+											<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>713</td><td>179</td><td>179</td><td>179</td></tr>
+											<tr><td style="text-align:left">R<sup>2</sup></td><td>0.00</td><td>0.00</td><td>0.06</td><td>0.00</td></tr>
+											<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>-0.00</td><td>-0.01</td><td>0.04</td><td>-0.01</td></tr>
+											<tr><td style="text-align:left">Residual Std. Error</td><td>0.12 (df = 709)</td><td>0.32 (df = 175)</td><td>57.27 (df = 175)</td><td>1.27 (df = 175)</td></tr>
+											<tr><td style="text-align:left">F Statistic</td><td>0.78 (df = 3; 709)</td><td>0.23 (df = 3; 175)</td><td>3.60<sup>**</sup> (df = 3; 175)</td><td>0.20 (df = 3; 175)</td></tr>
+											<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="4" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+											</table>
+
+									
+									
+								</div>
+
+								<div id="post" role="tabpanel" class="tab-pane active fade in ">
+
+										
+										<h4>Regression Results – Post-Treatment</h4>
+										
+														
+										
+										<table  class="table table-hover" style="text-align:center"><tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="4"><em>Dependent variable:</em></td></tr>
+											<tr><td></td><td colspan="4" style="border-bottom: 1px solid black"></td></tr>
+											<tr><td style="text-align:left"></td><td>CTR</td><td>NV</td><td>DUR</td><td>WV</td></tr>
+											<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td></tr>
+											<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Treatment</td><td>-0.02<sup>***</sup></td><td>0.01</td><td>-3.37</td><td>0.29</td></tr>
+											<tr><td style="text-align:left"></td><td>(0.01)</td><td>(0.04)</td><td>(9.35)</td><td>(0.20)</td></tr>
+											<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+											<tr><td style="text-align:left">POS</td><td>-0.00</td><td>0.02</td><td>1.59</td><td>-0.14</td></tr>
+											<tr><td style="text-align:left"></td><td>(0.00)</td><td>(0.02)</td><td>(4.22)</td><td>(0.09)</td></tr>
+											<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+											<tr><td style="text-align:left">KWSpecific</td><td>0.02</td><td>-0.01</td><td>0.77</td><td>-0.51</td></tr>
+											<tr><td style="text-align:left"></td><td>(0.02)</td><td>(0.11)</td><td>(26.79)</td><td>(0.59)</td></tr>
+											<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+											<tr><td style="text-align:left">Constant</td><td>0.03</td><td>0.77<sup>***</sup></td><td>37.44</td><td>2.77<sup>***</sup></td></tr>
+											<tr><td style="text-align:left"></td><td>(0.02)</td><td>(0.12)</td><td>(30.11)</td><td>(0.66)</td></tr>
+											<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
+											<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>1,457</td><td>343</td><td>343</td><td>343</td></tr>
+											<tr><td style="text-align:left">R<sup>2</sup></td><td>0.01</td><td>0.01</td><td>0.00</td><td>0.01</td></tr>
+											<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.01</td><td>-0.00</td><td>-0.01</td><td>0.00</td></tr>
+											<tr><td style="text-align:left">Residual Std. Error</td><td>0.13 (df = 1453)</td><td>0.33 (df = 339)</td><td>82.90 (df = 339)</td><td>1.81 (df = 339)</td></tr>
+											<tr><td style="text-align:left">F Statistic</td><td>4.17<sup>***</sup> (df = 3; 1453)</td><td>0.65 (df = 3; 339)</td><td>0.08 (df = 3; 339)</td><td>1.40 (df = 3; 339)</td></tr>
+											<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="4" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+											</table>
+											
+									
+									
+								</div>
+
+								<div id="variables" role="tabpanel" class="tab-pane active fade in ">
+										<h4>Variables</h4>
+										
+					
+									<img src="Variables.PNG" class="img-responsive" alt="Cinque Terre">
+
+									
+
+								</div>
+							</div>		
+
+						</div>
+				
+
+		
+	
+
+			
+				
+				
+				
+			</div>
+
+
 
 			<div id="abstract" role="tabpanel" class="tab-pane active fade in">
 				<h2>Abstract</h2>
