@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <title>LitVis</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
+    <link href="css/plugins/steps/jquery.steps.css" rel="stylesheet">
+    <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+    <link href="css/plugins/switchery/switchery.css" rel="stylesheet">
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet">
+    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.skinHTML5.css" rel="stylesheet">
+    <link href="css/plugins/codemirror/codemirror.css" rel="stylesheet">
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="src/lib/c3/c3.css" rel="stylesheet">
+    <link href="css/myCss.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                </li>
+
+                                            <li class='active'><a href="overview.html"><i class="fa fa-list-alt"></i> <span class="nav-label">Overview</span></a></li>
+                            <li ><a href="data.html"><i class="fa fa-database"></i> <span class="nav-label">Literature Classification</span></a></li>
+                            <li ><a href="customanalysis.html"><i class="fa fa-pie-chart"></i> <span class="nav-label">Custom Analysis</span></a></li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+
+
+    <div id="page-wrapper" class="gray-bg">
+
+            
+        <div class="row wrapper border-bottom white-bg page-heading">
+            <div class="col-lg-9">
+                                <h2>WHAT DRIVES PAID SEARCH SUCCESS? A SYSTEMATIC LITERATURE REVIEW</h2>
+                <h4>Interactive web application in order to facilitate the exploration of the current body of literature. This web application allows its users to filter studies based on certain attributes (e.g., methodology used, research and analysis focus) and to explore all core results of every research paper.</h4>
+            </div>
+            <div class="col-lg-3">
+                <h4 class="pull-right" style="margin-top: 2em;">Total amount of Sources: 34</h4>
+            </div>
+        </div>
+
+        <div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Top Journals</h5>
+                </div>
+                <div class="ibox-content" style="height: 357px;">
+                    <table class="table table-hover table-stripped">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Journal</th>
+                            <th># Sources</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                                                    <tr class="clickable tojournalsrow" data-id="Marketing Science">
+                                <td>1</td>
+                                <td>Marketing Science</td>
+                                <td>7</td>
+                            </tr>
+                                                        <tr class="clickable tojournalsrow" data-id="JMR (Journal of Marketing Research)">
+                                <td>2</td>
+                                <td>JMR (Journal of Marketing Research)</td>
+                                <td>4</td>
+                            </tr>
+                                                        <tr class="clickable tojournalsrow" data-id="Electronic Commerce Research and Applications">
+                                <td>3</td>
+                                <td>Electronic Commerce Research and Applications</td>
+                                <td>3</td>
+                            </tr>
+                                                        <tr class="clickable tojournalsrow" data-id="Management Science">
+                                <td>4</td>
+                                <td>Management Science</td>
+                                <td>2</td>
+                            </tr>
+                                                        <tr class="clickable tojournalsrow" data-id="Information Systems Research">
+                                <td>5</td>
+                                <td>Information Systems Research</td>
+                                <td>2</td>
+                            </tr>
+                                                        <tr class="clickable tojournalsrow" data-id="Journal of Interactive Advertising">
+                                <td>6</td>
+                                <td>Journal of Interactive Advertising</td>
+                                <td>2</td>
+                            </tr>
+                                                        <tr class="clickable tojournalsrow" data-id="Journal of Retailing and Consumer Services">
+                                <td>7</td>
+                                <td>Journal of Retailing and Consumer Services</td>
+                                <td>1</td>
+                            </tr>
+                                                        <tr class="clickable tojournalsrow" data-id="Marketing Letters">
+                                <td>8</td>
+                                <td>Marketing Letters</td>
+                                <td>1</td>
+                            </tr>
+                                                    </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Publication Year</h5>
+                </div>
+                <div class="ibox-content">
+                    <div id="chartpubyear"></div>
+                </div>
+            </div>
+        </div>
+
+<!--        <div class="col-lg-6">-->
+<!--            <div class="ibox float-e-margins">-->
+<!--                <div class="ibox-title">-->
+<!--                    <h5>Sources by Outlets</h5>-->
+<!--                </div>-->
+<!--                <div class="ibox-content">-->
+<!--                    <div id="chartpuborgan"></div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Most Citated Sources</h5>
+                </div>
+                <div class="ibox-content">
+                    <table class="table table-hover table-stripped">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Source</th>
+                            <th>Citations</th>
+<!--                            <th>Date</th>-->
+                        </tr>
+                        </thead>
+                        <tbody>
+                                                    <tr class="clickable mostcitatedsourcesrow" data-id="110">
+                                <td>1</td>
+                                <td>Ghose, Yang (2009)</td>
+                                <td>504</td>
+<!--                                <td>--><!--</td>-->
+                            </tr>
+                                                        <tr class="clickable mostcitatedsourcesrow" data-id="124">
+                                <td>2</td>
+                                <td>Rutz, Bucklin (2011)</td>
+                                <td>289</td>
+<!--                                <td>--><!--</td>-->
+                            </tr>
+                                                        <tr class="clickable mostcitatedsourcesrow" data-id="101">
+                                <td>3</td>
+                                <td>Agarwal et al. (2011)</td>
+                                <td>279</td>
+<!--                                <td>--><!--</td>-->
+                            </tr>
+                                                        <tr class="clickable mostcitatedsourcesrow" data-id="116">
+                                <td>4</td>
+                                <td>Jerath et al. (2011)</td>
+                                <td>96</td>
+<!--                                <td>--><!--</td>-->
+                            </tr>
+                                                        <tr class="clickable mostcitatedsourcesrow" data-id="134">
+                                <td>5</td>
+                                <td>Jeziorski, Segal (2015)</td>
+                                <td>96</td>
+<!--                                <td>--><!--</td>-->
+                            </tr>
+                                                        <tr class="clickable mostcitatedsourcesrow" data-id="125">
+                                <td>6</td>
+                                <td>Rutz et al. (2012)</td>
+                                <td>91</td>
+<!--                                <td>--><!--</td>-->
+                            </tr>
+                                                        <tr class="clickable mostcitatedsourcesrow" data-id="127">
+                                <td>7</td>
+                                <td>Rutz et al. (2011)</td>
+                                <td>79</td>
+<!--                                <td>--><!--</td>-->
+                            </tr>
+                                                        <tr class="clickable mostcitatedsourcesrow" data-id="114">
+                                <td>8</td>
+                                <td>Jansen, Schuster (2011)</td>
+                                <td>75</td>
+<!--                                <td>--><!--</td>-->
+                            </tr>
+                                                        <tr class="clickable mostcitatedsourcesrow" data-id="117">
+                                <td>9</td>
+                                <td>Jerath et al. (2014)</td>
+                                <td>75</td>
+<!--                                <td>--><!--</td>-->
+                            </tr>
+                                                        <tr class="clickable mostcitatedsourcesrow" data-id="126">
+                                <td>10</td>
+                                <td>Rutz, Trusov (2011)</td>
+                                <td>75</td>
+<!--                                <td>--><!--</td>-->
+                            </tr>
+                                                        <tr class="clickable mostcitatedsourcesrow" data-id="103">
+                                <td>11</td>
+                                <td>Animesh et al. (2011)</td>
+                                <td>74</td>
+<!--                                <td>--><!--</td>-->
+                            </tr>
+                                                        <tr class="clickable mostcitatedsourcesrow" data-id="128">
+                                <td>12</td>
+                                <td>Skiera et al. (2010)</td>
+                                <td>45</td>
+<!--                                <td>--><!--</td>-->
+                            </tr>
+                                                    </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Research Region</h5>
+                </div>
+                <div class="ibox-content" style="height: 517px;">
+                    <div id="chartcountry"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+<div class="modal inmodal fade" id="sourceModal" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-extralarge">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Sources (<span class="amountofsources">1</span>)</h4>
+                <small class="font-bold">All selected Sources</small>
+            </div>
+            <div class="modal-body sourceModalBody">
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal inmodal fade" id="exportModal" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Export</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="form-group"><label class="col-sm-2 control-label">Title</label>
+                            <div class="col-sm-10"><input type="text" id="exporttitle" class="form-control"></div>
+                        </div>
+                        <br></br>
+                        <div class="form-group"><label class="col-sm-2 control-label">Subtitle</label>
+                            <div class="col-sm-10"><input type="text" id="exportsubtitle" class="form-control"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary doExport" data-dismiss="modal">Do Export</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- Mainly scripts -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Peity -->
+<script src="js/plugins/peity/jquery.peity.min.js"></script>
+<script src="js/demo/peity-demo.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="js/inspinia.js"></script>
+<script src="js/plugins/pace/pace.min.js"></script>
+
+<script src="js/plugins/toastr/toastr.min.js"></script>
+
+<!-- jQuery UI -->
+<script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+
+<script src="js/plugins/chosen/chosen.jquery.js"></script>
+
+<script src="js/plugins/switchery/switchery.js"></script>
+
+<!-- iCheck -->
+<script src="js/plugins/iCheck/icheck.min.js"></script>
+
+<script src="js/plugins/typehead/bootstrap3-typeahead.min.js"></script>
+
+<script src="src/lib/tinymce/tinymce.min.js"></script>
+<script src="src/lib/tinymce/jquery.tinymce.min.js"></script>
+
+<script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+
+<script src="js/plugins/ionRangeSlider/ion.rangeSlider.min.js"></script>
+
+
+<script src="js/mainJs.js"></script>
+
+<script type="text/javascript" src="data/paper1.json"></script>
+<script type="text/javascript" src="data/paper2.json"></script>
+<!--//###data3###-->
+<script type="text/javascript" src="data/data4.json"></script>
+<!--//###data5###-->
+
+<script type="text/javascript" src="data/sources.json"></script>
+
+
+    <script src="js/plugins/d3/d3.min.js"></script>
+    <script src="src/lib/c3/c3.min.js"></script>
+    <script src="js/plugins/topojson/topojson.js"></script>
+    <script src="js/plugins/datamaps/datamaps.all.min.js"></script>
+    <script src="js/plugins/typehead/bootstrap3-typeahead.min.js"></script>
+    <script src="js/overview.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+.clickable{
+    cursor: pointer;
+}
+
+.blankspace{
+    height: 30px;
+}
+
+.textareasource{
+    max-width: 100%;
+
+}
+
+#page-wrapper.rc_header{
+    margin: 0 0 0 0;
+}
+
+.adjustposition{
+    margin-top: -0.5em;
+}
+
+.hiddenvariable{
+    display:none;
+}
+
+
+.bigselectbox{
+    height: 200px!important;
+}
+
+.adjustselectposition{
+    margin-left: 15px;
+}
+
+
+.activatedVariable{
+    background-color: rgb(51, 153, 255);
+    color: #ffffff;
+}
+
+.notActivatedVariable{
+    background-color: #ffffff;
+    color: rgb(103, 106, 108);
+}
+
+.enabler{
+    float:left;
+    margin-left: 15px;
+}
+
+.c3-legend-item{
+    display:none;
+}
+
+.datamaps-subunit{
+    cursor: pointer;
+}
+
+.hiddenheader{
+    display: none!important;
+}
+
+.verticaldivider{
+    border-right: 3px dashed #cbcccb;
+}
+
+.modal-extralarge{
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.textcenter{
+    text-align: center!important;
+}
